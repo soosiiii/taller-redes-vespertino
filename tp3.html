@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tp3.css">
+    <title>Documento</title>
+</head>
+
+<body>
+    <h1>tp3: topologias.</h1>
+    <ul id="presentacion">
+            <li>ALUMNOS: Layan Dante Nicolás, Campagne Sofia.</li>
+            <li>PROFESOR: Muñoz Fabian</li>
+            <li>CURSO: 4º4º turno VESPERTINO</li>
+    </ul>
+
+    <h3>topologias de RED
+        <div id="botones">
+        <button>
+            <a href="#bus">Topologia Bus</a>
+        </button>
+        <button>
+            <a href="#star">Topologia Star</a>
+        </button>
+        <button>
+            <a href="#tree">Topologia Tree</a>
+        </button>
+        <button>
+            <a href="#mesh">Topologia Mesh</a>
+        </button>
+        <button>
+            <a href="#mixto">Topologia Hybrid</a>
+        </button>
+    </div>
+    </h3>
+
+    <ul>
+            
+        <h4 id="bus">topologia bus:</h4>
+        <h5>Definicion:</h5>
+        <p>
+            Todos los dispositivos se conectan a un
+            único cable principal llamado troncal o backbone, que actúa
+            como la vía central de comunicación.
+        </p>
+        <img src="http://topologiasdered.com/wp-content/uploads/topologia-de-red-en-bus-2022.webp" alt="imagen de TOPOLOGIA BUS">
+        <h5>Ventajas:</h5>
+        <ol>
+            <li>
+             <p>
+            bajo costo
+             </p>
+            </li>
+            <li>
+                facil instalacion.
+            </li>
+        </ol>
+         <h5>Desventajas:</h5>
+        <ol>
+            <li>
+             <p>
+            colapso y probabildad de perdida de datos.
+             </p>
+            </li>
+            <li>
+            si el cable "troncal" se ve interrumpido o se rompa toda la Red se cae.
+            </li>
+        </ol>
+
+        <h4 id="star">topologia star:</h4>
+        <h5>Definicion</h5>
+        <p>Cada dispositivo se conecta individualmente
+a un punto central activo, que generalmente es un switch o
+un router.</p>
+        <img src="https://topologiasdered.com/wp-content/uploads/topologia-de-red-en-estrella-2022.webp" alt="imagen de topologia STAR">
+        <h5>Ventajas</h5>
+        <ol>
+            <li>si una computadora se rompe, no afecta a las demas</li>
+            <li>es facil de instalar y administrar porque todo pasa por un punto central(switch o hub)</li>
+        </ol>
+        <h5>Desventajas</h5>
+        <ol>
+            <li>si se rompe el dispositivo central (switch/hub), toda la red deja de funcionar.</li>
+            <li>usa mas cables que otra cosas topologias, por lo que puede costar mas.</li>
+        </ol>
+
+        <h4 id="tree">topologia arbol(tree)</h4>
+        <h5>Definicion</h5>
+        <p>Es una estructura jerárquica que resulta de
+la combinación de varias topologías Estrella, donde los hubs
+o switches centrales están conectados a un bus o tronco
+principal.</p>
+        <img src="https://topologiasdered.com/wp-content/uploads/diagrama-topologia-de-red-en-arbol.webp" alt="imagen de topologia ARBOL(TREE)">
+        <h5>Ventajas</h5>
+        <ol>
+            <li>permiten conectar muchas computadoras en diferentes niveles, como si fueran ramas. ideal para redes grandes</li>
+            <li>es facil de expandir agregando mas ramas sin afectar a lo demas</li>
+        </ol>
+        <h5>Desventajas</h5>
+        <ol>
+            <li>si falla la parte principal del arbol, varias secciones de la red quedan desconectadas</li>
+            <li>la instalacion puede ser mas compleja y costosa por su estructura por niveles</li>
+        </ol>
+
+        <h4 id="mesh">topologia malla(mesh)</h4>
+        <h5>Definicion</h5>
+        <p>Cada dispositivo de la red está conectado
+directamente a todos los demás dispositivos (malla
+completa), creando múltiples caminos para la transferencia
+de datos.</p>
+        <img src="https://topologiasdered.com/wp-content/uploads/topologia-red-en-malla-2022.webp" alt="imagen de topologia MALLA(MESH)">
+        <h5>Ventajas</h5>
+        <ol>
+            <li>si un cable falla, la red sigue funcionando.</li>
+            <li>muy confiable y rapida por tener varios caminos</li>
+        </ol>
+        <h5></h5>
+        <ol>
+            <li>necesita muchos cables, lo que la hace cara</li>
+            <li>dificil de instalar y mantener por la cantidad de enlaces entre los dispositivos</li>
+        </ol>
+
+        <h4 id="mixto">topologia mixta(hybrid)</h4>
+        <h5>Definicion</h5>
+        <p>Se crea al combinar intencionalmente dos o
+más topologías diferentes (por ejemplo, una red Estrella en
+una oficina conectada a un anillo central).</p>
+        <img src="https://topologiasdered.com/wp-content/uploads/topologia-de-red-hibrida-1.webp" alt="imagen de topologia MIXTA(HYBRID)">
+        <h5>Ventajas</h5>
+        <ol>
+            <li>combina lo mejor de varias topologias, lo que permite aprovechar sus puntos fuertes</li>
+            <li>es felxible y se puede adaptar a diferentes necesidades o tamaños de red</li>
+        </ol>
+        <h5>Desventajas</h5>
+        <ol>
+            <li>puede ser mas complicada de planificar y mantener porque mezcla distintos tipo de conexiones</li>
+            <li>su costo puede ser mas alto si requiere muchos dispositivos diferentes</li>
+        </ol>
+    </ul>
+    <footer>
+        <p>fuentes utilizadas:</p>
+        <ul>
+         <li> <a href="https://chatgpt.com/">chatgpt</a> </li>
+         <li> <a href="https://campus.cet30.edu.ar/course/view.php?id=584">plataforma educativa</a> </li>
+         <li> <a href="https://www.google.com/search?q=topologias+de+red&rlz=1C1GCEA_enAR1153AR1154&oq=topologias&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAtIBCDQ4OTNqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">google</a> </li>
+         <li> <a href="https://topologiasdered.com/red-hibrida/">topologias de red</a> </li>
+        </ul>
+    </footer>
+</body>
+</html>
